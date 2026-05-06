@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel de Abelha – Clube de Ciências</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projetos-extra.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-logos">
+            <img class="header-logo-big" src="https://static.wixstatic.com/media/84aa27_1329227193a94bfcb627adb0ab74349f~mv2.jpg/v1/crop/x_176,y_22,w_996,h_964/fill/w_176,h_169,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Logo%20%2BCI%C3%8ANCI_CAM%C3%95ES.jpg" alt="+CIÊNCI@CAMÕES">
+            <div class="header-logo-group">
+                <img class="header-logo-camoes" src="images/camoes-logo.png" alt="Logótipo Camões">
+                <img class="header-logo-small" src="https://static.wixstatic.com/media/84aa27_b7e06445a7f24d79b6b297065c42c593~mv2.png/v1/fill/w_212,h_88,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logo_CCV.png" alt="Clube Ciência Viva">
+            </div>
+        </div>
+        <h1><strong>CLUBE DE CIÊNCIAS</strong></h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href=".html">Nós</a>
+            <a href="Mapa.html">Mapa</a>
+            <a href="Projetos.html">Projetos</a>
+            <a href="contactos.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+
+        
+        <div class="projeto-hero" style="background-image: url('images/Hotel Frente.jpg')">
+            <h2 class="projeto-hero-titulo">Hotel de Abelha</h2>
+        </div>
+
+        
+        <section class="projeto-detalhe">
+
+            <p class="projeto-data">Data de Realização: <strong>Abril 2024</strong></p>
+
+            <div class="projeto-secao">
+                <h3>Objetivos:</h3>
+                <p>O hotel de abelhas é uma estrutura criada para oferecer abrigo e local de nidificação para abelhas solitárias, que não vivem em colmeias como as abelhas comuns. Essas espécies procuram pequenos buracos em madeira, caules ocos ou fendas naturais para depositar seus ovos, e o hotel reproduz essas condições de forma segura.</p>
+
+                 <p>O principal objetivo desse tipo de estrutura é contribuir para a preservação das abelhas, que são polinizadoras essenciais para o equilíbrio dos ecossistemas. Ao fornecer um espaço adequado para sua reprodução, ajudamos a manter e até aumentar a população dessas importantes insetos.</p>
+
+                 <p>Além disso, os hotéis de abelhas desempenham um papel fundamental na polinização de plantas. Com mais abelhas presentes no ambiente, há maior fertilização de flores, o que favorece o crescimento de frutas, legumes e outras plantas, tanto em jardins quanto em áreas agrícolas.</p>
+
+                 <p>Outro objetivo importante é a educação ambiental. Observar o funcionamento de um hotel de abelhas permite compreender melhor o comportamento desses insetos e sua importância para a natureza, incentivando atitudes mais conscientes em relação ao meio ambiente.</p>
+
+                 <p>Por fim, o hotel de abelhas também tem valor estético e ecológico. Ele pode ser integrado facilmente em jardins e espaços verdes, tornando-se um elemento decorativo ao mesmo tempo em que cumpre uma função essencial na preservação da biodiversidade.</p>
+            </div>
+
+            <div class="projeto-secao">
+                <h3>Parceiros:</h3>
+                <p>Clube Ciência Viva · Instituto Camões · Escola Secundária de Camões</p>
+            </div>
+
+            <div class="projeto-secao">
+                <h3>Galeria:</h3>
+                <div class="projeto-galeria">
+                    <img src="images/Hotel Frente.jpg" alt="Hotel de Abelha 1" data-descricao="Estrutura feita com madeira e tubos de cartão onde as abelhas entram. A madeira garante suporte e proteção contra chuva e vento. O objetivo é apoiar a polinização, aumentar a biodiversidade e compensar a perda de habitats naturais em ambientes urbanos." onclick="abrirLightbox(this)">
+                    <img src="imagens/HotelLado.jpg" alt="Hotel de Abelha 2" data-descricao="Estrutura de madeira com vários tubos e orifícios, concebida para servir de abrigo e local de nidificação para abelhas solitárias e outros insetos." onclick="abrirLightbox(this)">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Bee_hotel_-_geograph.org.uk_-_1624846.jpg/640px-Bee_hotel_-_geograph.org.uk_-_1624846.jpg" alt="Hotel de Abelha 3" data-descricao="Pequena construção em madeira preenchida com canas e blocos perfurados, utilizada como habitat artificial para insetos, sobretudo abelhas solitárias, permitindo a sua reprodução e proteção." onclick="abrirLightbox(this)">
+                    
+                </div>
+            </div>
+
+            <a href="Projetos.html" class="btn-voltar">← Voltar aos Projetos</a>
+
+        </section>
+
+    </main>
+
+    <div id="lightbox" onclick="fecharLightbox()">
+        <div class="lightbox-conteudo" onclick="event.stopPropagation()">
+            <button class="lightbox-fechar" onclick="fecharLightbox()">✕</button>
+            <img id="lightbox-img" src="" alt="">
+            <p id="lightbox-descricao"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Clube de Ciências · +CIÊNCI@CAMÕES</p>
+    </footer>
+
+    <script src="lightbox.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem Somos – Clube de Ciências</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* FOTO DE GRUPO */
+        .grupo-foto {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            object-position: center top;
+            border-radius: 0;
+            margin: 0;
+            display: block;
+        }
+ 
+        /* TÍTULO */
+        .qs-titulo {
+            font-size: 2.4rem;
+            font-weight: 800;
+            color: #111;
+            text-align: center;
+            padding: 40px 20px 10px;
+            margin: 0;
+        }
+ 
+        /* GRELHA PRINCIPAL */
+        .qs-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            max-width: 860px;
+            margin: 30px auto 10px;
+            padding: 0 30px;
+            align-items: start;
+        }
+ 
+        /* COORDENADOR */
+        .qs-coordenador h3 {
+            font-size: 1rem;
+            font-weight: 800;
+            color: #111;
+            margin-bottom: 12px;
+        }
+ 
+        .qs-coordenador-inner {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+        }
+ 
+        .qs-coordenador-inner img {
+            width: 90px;
+            height: 110px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin: 0;
+            flex-shrink: 0;
+        }
+ 
+        .qs-coordenador-inner p {
+            font-size: 0.9rem;
+            line-height: 1.7;
+            text-align: left;
+            margin: 0;
+            color: #333;
+        }
+ 
+        /* EQUIPAS */
+        .qs-equipas h3 {
+            font-size: 1rem;
+            font-weight: 800;
+            color: #111;
+            margin-bottom: 8px;
+            margin-top: 0;
+        }
+ 
+        .qs-equipas h3:not(:first-child) {
+            margin-top: 24px;
+        }
+ 
+        .qs-equipas p {
+            font-size: 0.9rem;
+            line-height: 1.7;
+            color: #333;
+            text-align: left;
+            margin: 0;
+        }
+ 
+        /* TEXTOS */
+        .qs-textos {
+            max-width: 860px;
+            margin: 20px auto 40px;
+            padding: 0 30px;
+        }
+ 
+        .qs-textos p {
+            font-size: 0.93rem;
+            line-height: 1.85;
+            text-align: center;
+            color: #222;
+            margin-bottom: 16px;
+        }
+ 
+        .qs-textos a {
+            color: #184A97;
+            text-decoration: underline;
+        }
+ 
+        .qs-textos a:hover {
+            color: #c0392b;
+        }
+ 
+        /* RESPONSIVO */
+        @media (max-width: 600px) {
+            .qs-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+ 
+    <header>
+        <div class="header-logos">
+            <img class="header-logo-big" src="https://static.wixstatic.com/media/84aa27_1329227193a94bfcb627adb0ab74349f~mv2.jpg/v1/crop/x_176,y_22,w_996,h_964/fill/w_176,h_169,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Logo%20%2BCI%C3%8ANCI_CAM%C3%95ES.jpg%22 alt="+CIÊNCI@CAMÕES">
+            <div class="header-logo-group">
+                <img class="header-logo-camoes" src="images/camoes-logo.png" alt="Logótipo Camões">
+                <img class="header-logo-small" src="https://static.wixstatic.com/media/84aa27_b7e06445a7f24d79b6b297065c42c593~mv2.png/v1/fill/w_212,h_88,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logo_CCV.png%22 alt="Clube Ciência Viva">
+            </div>
+        </div>
+        <h1><strong>CLUBE DE CIÊNCIAS</strong></h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="nos.html">Nós</a>
+            <a href="Mapa.html">Mapa</a>
+            <a href="Projetos.html">Projetos</a>
+            <a href="contactos.html">Contactos</a>
+        </nav>
+    </header>
+ 
+    <main style="padding: 0;">
+ 
+        <!-- FOTO DE GRUPO -->
+        <img class="grupo-foto" src="images/Image.jpeg" alt="Foto de grupo do Clube de Ciências">
+ 
+        <!-- TÍTULO -->
+        <h2 class="qs-titulo">Quem somos?</h2>
+ 
+        <!-- GRELHA: COORDENADOR + EQUIPAS -->
+        <div class="qs-grid">
+ 
+            <!-- ESQUERDA: COORDENADOR -->
+            <div class="qs-coordenador">
+                <h3>Coordenador do Clube: João Santos</h3>
+                <div class="qs-coordenador-inner">
+                    <img src="images/IMG-20241231-WA0003.jpg" alt="João Santos">
+                    <p>
+                        Professor de Biologia e Geologia<br>
+                        Mestre<br>
+                        Cozinheiro<br>
+                        Agente Secreto
+                    </p>
+                </div>
+            </div>
+ 
+            <!-- DIREITA: EQUIPAS -->
+            <div class="qs-equipas">
+                <h3>Equipa de Professores:</h3>
+                <p>Alda Pais, Anabela Teixeira, Catarina Leal,
+                Hugo Carmo, Cassilda Paz, Isabel Trigueiros,
+                Eduardo Jorge Gomes, Noémia Felix, Carlos
+                Castro, António Rosa e Margarida Paiva.</p>
+ 
+                <h3>Equipa de Alunos:</h3>
+                <p>Alunos das turmas: 10ºA, 10ºC, 11ºD, 11ºE, 12ºA</p>
+            </div>
+ 
+        </div>
+ 
+        <!-- TEXTOS -->
+        <div class="qs-textos">
+            <p>O clube está aberto a todos os alunos que tenham interesse em participar em atividades de caráter científico e na sua divulgação. Assim, haverá alunos diretamente envolvidos nas atividades programadas e os restantes alunos e comunidade escolar participarão das apresentações e eventos organizados pelo +CIÊNCI@CAMÕES.</p>
+ 
+            <p>Somos um Clube Ciência Viva, +CIÊNCI@CAMÕES, criado sob o tema Património Natural e Cultural e que vai fazer parte da Rede Nacional de Clubes Ciência Viva.</p>
+ 
+            <p>Na génese do +CIÊNCI@CAMÕES está a parceria com o <a href="https://www.muesc.pt" target="_blank">MUESC</a> e, por isso, será muito relevante considerar a utilização do património para perceber o contexto, os fenómenos e a história da ciência. Sempre que possível as nossas atividades serão desenvolvidas tendo como matriz fundamental esta ligação umbilical ao <a href="https://www.muesc.pt" target="_blank">MUESC</a>.</p>
+ 
+            <p>Para dar qualidade e credibilidade aos nossos projetos vamos estabelecer acordos de parceria científica, com investigadores e instituições científicas.</p>
+        </div>
+ 
+    </main>
+ 
+    <footer>
+        <p>© 2024 Clube de Ciências · +CIÊNCI@CAMÕES</p>
+    </footer>
+ 
+</body>
+</html>
