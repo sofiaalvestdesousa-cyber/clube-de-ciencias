@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jardim Aromático – Clube de Ciências</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projetos-extra.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-logos">
+            <img class="header-logo-big" src="https://static.wixstatic.com/media/84aa27_1329227193a94bfcb627adb0ab74349f~mv2.jpg/v1/crop/x_176,y_22,w_996,h_964/fill/w_176,h_169,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Logo%20%2BCI%C3%8ANCI_CAM%C3%95ES.jpg" alt="+CIÊNCI@CAMÕES">
+            <div class="header-logo-group">
+                <img class="header-logo-camoes" src="images/camoes-logo.png" alt="Logótipo Camões">
+                <img class="header-logo-small" src="https://static.wixstatic.com/media/84aa27_b7e06445a7f24d79b6b297065c42c593~mv2.png/v1/fill/w_212,h_88,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logo_CCV.png" alt="Clube Ciência Viva">
+            </div>
+        </div>
+        <h1><strong>CLUBE DE CIÊNCIAS</strong></h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="nos.html">Nós</a>
+            <a href="Mapa.html">Mapa</a>
+            <a href="Projetos.html">Projetos</a>
+            <a href="contactos.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- IMAGEM DE DESTAQUE COM TÍTULO -->
+        <div class="projeto-hero" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Sunflower_field_near_Castelnaudary_-_Aude_-_France.jpg/640px-Sunflower_field_near_Castelnaudary_-_Aude_-_France.jpg')">
+            <h2 class="projeto-hero-titulo">Jardim Aromático</h2>
+        </div>
+
+        <!-- CONTEÚDO DO PROJETO -->
+        <section class="projeto-detalhe">
+
+            <p class="projeto-data">Data de Realização: <strong>Abril 2024</strong></p>
+
+            <div class="projeto-secao">
+                <h3>Objetivos:</h3>
+                <p>Um jardim aromático tem como principal objetivo cultivar plantas que exalam aromas agradáveis e que possuem diversas utilidades no dia a dia. Entre as mais comuns estão ervas como alecrim, hortelã, manjericão, tomilho e lavanda, conhecidas tanto pelo perfume quanto pelas suas propriedades culinárias, medicinais e terapêuticas.</p>
+
+                <p>Além de enriquecer a alimentação, essas plantas são amplamente utilizadas na preparação de chás, temperos e remédios naturais. Assim, o jardim aromático contribui para um estilo de vida mais saudável e sustentável, incentivando o uso de ingredientes frescos e livres de produtos químicos.</p>
+
+                <p>Outro objetivo importante é o bem-estar. Os aromas liberados pelas plantas podem ter efeitos calmantes, estimulantes ou relaxantes, ajudando a reduzir o stress e a ansiedade. Cuidar de um jardim também é uma atividade terapêutica, promovendo o contato com a natureza e momentos de tranquilidade.</p>
+
+                <p>O jardim aromático também desempenha um papel ecológico relevante. Muitas dessas plantas atraem polinizadores, como abelhas e borboletas, contribuindo para a biodiversidade e o equilíbrio do ecossistema. Além disso, algumas ervas ajudam a repelir insetos naturalmente, reduzindo a necessidade de pesticidas.</p>
+
+                <p>Por fim, esse tipo de jardim valoriza o espaço onde está inserido, seja um quintal, varanda ou até pequenos vasos dentro de casa. Ele une beleza, funcionalidade e sustentabilidade, tornando o ambiente mais agradável e vivo.</p>
+            </div>
+
+            <div class="projeto-secao">
+                <h3>Parceiros:</h3>
+                <p>Clube Ciência Viva · Instituto Camões · Escola Secundária de Camões</p>
+            </div>
+
+            <div class="projeto-secao">
+                <h3>Galeria:</h3>
+                <div class="projeto-galeria">
+                    <img src="images/Jardim capa.jpeg" alt="Jardim Aromático 1" data-descricao="Descrição da imagem 2" onclick="abrirLightbox(this)">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Bee_hotel_-_geograph.org.uk_-_1624846.jpg/640px-Bee_hotel_-_geograph.org.uk_-_1624846.jpg" alt="Jardim Aromático 2" data-descricao="Descrição da imagem 2" onclick="abrirLightbox(this)">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Bee_hotel_-_geograph.org.uk_-_1624846.jpg/640px-Bee_hotel_-_geograph.org.uk_-_1624846.jpg" alt="Jardim Aromático 3" data-descricao="Descrição da imagem 2" onclick="abrirLightbox(this)">
+                </div>
+            </div>
+
+            <a href="Projetos.html" class="btn-voltar">← Voltar aos Projetos</a>
+
+        </section>
+
+    </main>
+
+    <div id="lightbox" onclick="fecharLightbox()">
+        <div class="lightbox-conteudo" onclick="event.stopPropagation()">
+            <button class="lightbox-fechar" onclick="fecharLightbox()">✕</button>
+            <img id="lightbox-img" src="" alt="">
+            <p id="lightbox-descricao"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Clube de Ciências · +CIÊNCI@CAMÕES</p>
+    </footer>
+
+</body>
+</html>
